@@ -1,0 +1,15 @@
+
+# BEGIN WordPress
+# Instruksjonene (linjer) mellom `BEGIN WordPress` and `END WordPress` er
+# dynamisk generert og bør bare endres via WordPress-filtre.
+# Enhver endring av instruksjonene mellom disse markørene vil bli overskrevet.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /strandbu-wp/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /strandbu-wp/index.php [L]
+</IfModule>
+
+# END WordPress
